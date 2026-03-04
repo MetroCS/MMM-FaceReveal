@@ -4,8 +4,8 @@
   "description": "A MagicMirror² module that displays a face and reveals a card after a delay.",
   "main": "MMM-FaceReveal.js",
   "scripts": {
-    "lint": "eslint *.js",
-    "lint:fix": "eslint *.js --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "node --run lint"
   },
   "repository": {
