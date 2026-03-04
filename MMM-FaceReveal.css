@@ -1,0 +1,20 @@
+.mmfr-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.mmfr-image {
+  display: block;
+}
+
+.mmfr-prompt {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+
+.mmfr-prompt-hidden {
+  opacity: 0;
+}
