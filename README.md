@@ -55,7 +55,7 @@ A basic configuration for this module:
         promptMode: "random",
         maxWidth: "100%"
       }
-},
+    }
 ```
 
 Typical configuration:
@@ -68,7 +68,6 @@ Typical configuration:
 		    cardsPath: "images/cards",
 		    faceSuffix: "_face",
 		    cardSuffix: "_card",
-		    promptText: "Do you know who this is?",
 		    prompts: ["Who is this?",
 			          "Do you know who this is?",
 			          "Can you identify this person?",
@@ -82,7 +81,7 @@ Typical configuration:
 		    maxHeight: "500px",
 		    objectFit: "contain",
 	    }
-	},
+	}
 ```
 
 
@@ -90,14 +89,14 @@ Typical configuration:
 
 | Option | Type | Default | Description |
 |---|---|---|---|
-| `facesPath` | `string` | `"images/face-reveal/faces"` | Path to face images, relative to the module directory. |
-| `cardsPath` | `string` | `"images/face-reveal/cards"` | Path to reveal/answer images, relative to the module directory. |
-| `faceSuffix` | `string` | `"_face"` | The suffix used to identify face files (e.g., `person1_face.jpg`). |
-| `cardSuffix` | `string` | `"_card"` | The suffix used to identify card files (e.g., `person1_card.jpg`). |
+| `facesPath` | `string` | `"images/faces"` | Path to face images, relative to the module directory. |
+| `cardsPath` | `string` | `"images/cards"` | Path to reveal/answer images, relative to the module directory. |
+| `faceSuffix` | `string` | `"_face"` | The suffix used to identify face files (e.g., `person_face.jpg`). |
+| `cardSuffix` | `string` | `"_card"` | The suffix used to identify card files (e.g., `person_card.jpg`). |
 | `width` | `string` | `null` | The CSS width for the image (e.g., `"300px"`). |
 | `height` | `string` | `null` | The CSS height for the image (e.g., `"300px"`). |
-| `maxWidth` | `string` | `null` | The maximum CSS width allowed for the image. |
-| `maxHeight` | `string` | `null` | The maximum CSS height allowed for the image. |
+| `maxWidth` | `string` | `100%` | The maximum CSS width allowed for the image. |
+| `maxHeight` | `string` | `100%` | The maximum CSS height allowed for the image. |
 | `objectFit` | `string` | `"contain"` | How the image fits its container (CSS `object-fit` property): `"contain"` or `"cover"`. |
 | `prompts` | `array` | `["Who is this?"]` | A list of strings to display as during the face phase. |
 | `promptMode` | `string` | `"cycle"` | Logic for choosing the next prompt: `"cycle"` or `"random"`. |
@@ -109,9 +108,10 @@ Typical configuration:
 
 ## Developer commands
 
-- `npm install` - Install developer dependencies.
-- `node --run lint` - Run linting and formatter checks.
-- `node --run lint:fix` - Fix linting and formatter issues.
+- `npm install` - Install dependencies and developer tools.
+- `npm run lint` - Run super-linter (JS, CSS, and Markdown).
+- `npm run lint:fix` - Fix formatting and stylistic issues.
+- `npm test` - Aias for the linting command
 
 ## License
 
