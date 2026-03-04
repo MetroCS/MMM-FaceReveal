@@ -1,20 +1,37 @@
+/* MMM-FaceReveal.css */
 .mmfr-wrapper {
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .mmfr-image {
   display: block;
+  border-radius: 8px; /* Softens edges of images */
+  background-color: #222; /* Reduces layout "flash" if an image is loading */
+  transition: opacity 300ms ease-in-out;
 }
 
 .mmfr-prompt {
   margin-top: 0.5rem;
   font-size: 1.2rem;
   line-height: 1.3;
+  text-align: center;
+  color: var(--color-text-bright);
   opacity: 1;
-  transition: opacity 300ms ease;
+  transition: opacity 300ms ease-in-out;
 }
 
+/* State when card is revealed */
 .mmfr-prompt-hidden {
   opacity: 0;
+}
+
+/* Error and Loading states styling */
+.mmfr-wrapper.dimmed {
+  font-style: italic;
+  padding: 20px;
 }
