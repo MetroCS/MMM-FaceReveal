@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+[https://github.com/MetroCS/MMM-FaceReveal].git"
+    "url": "git+https://github.com/MetroCS/MMM-FaceReveal.git"
   },
   "keywords": [
     "magicmirror",
@@ -21,20 +21,18 @@
   "author": "Dr. Jody Paul",
   "license": "MIT",
   "bugs": {
-    "url": "[https://github.com/MetroCS/MMM-FaceReveal]/issues"
+    "url": "https://github.com/MetroCS/MMM-FaceReveal/issues"
   },
   "engines": {
     "node": ">=18"
   },
-  "homepage": "[GitHub url]#readme",
+  "homepage": "https://github.com/MetroCS/MMM-FaceReveal#readme",
   "devDependencies": {
     "@eslint/css": "^0.9.0",
     "@eslint/js": "^9.30.1",
     "@eslint/markdown": "^6.6.0",
     "@stylistic/eslint-plugin": "^5.1.0",
     "eslint": "^9.30.1",
-    "globals": "^16.3.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.3"
+    "globals": "^16.3.0"
   }
 }
