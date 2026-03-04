@@ -7,9 +7,18 @@ notable.
 
 ## Screenshots
 
-![Example of MMM-FaceReveal](./screenshot_1.png)
-
-![Example of MMM-FaceReveal](./screenshot_2.png)
+<table border="0">
+  <tr>
+    <td valign="top">
+      <p align="center"><b>The Face Phase</b></p>
+      <img src="./screenshot_1.png" width="300">
+    </td>
+    <td valign="top">
+      <p align="center"><b>The Reveal Phase</b></p>
+      <img src="./screenshot_2.png" width="300">
+    </td>
+  </tr>
+</table>
 
 ## Installation
 
